@@ -1,0 +1,90 @@
+.profile-view-container { 
+    max-width: 500px; 
+    margin: 60px auto; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03); 
+    padding: 40px 32px; 
+}
+
+.profile-avatar-lg { 
+    width: 96px; 
+    height: 96px; 
+    border-radius: 50%; 
+    background: #6a7f64; 
+    color: #fff; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 2.8rem; 
+    font-weight: 700; 
+    margin: 0 auto 18px auto; 
+}
+
+.profile-name-lg { 
+    font-size: 1.3rem; 
+    font-weight: 700; 
+    margin-bottom: 2px; 
+    text-align: center; 
+}
+
+.profile-title { 
+    color: #888; 
+    font-size: 1rem; 
+    margin-bottom: 18px; 
+    text-align: center; 
+}
+
+.profile-stats { 
+    display: flex; 
+    gap: 24px; 
+    margin-bottom: 18px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.profile-stat { 
+    text-align: center; 
+}
+
+.profile-stat-num { 
+    font-weight: 700; 
+    font-size: 1.1rem; 
+}
+
+.profile-location { 
+    color: #6c757d; 
+    font-size: 0.98rem; 
+    margin-bottom: 8px; 
+    text-align: center; 
+}
+
+.profile-about { 
+    color: #888; 
+    font-size: 0.98rem; 
+    text-align: center; 
+    margin-bottom: 18px; 
+}
+
+.profile-actions { 
+    display: flex; 
+    gap: 16px; 
+    justify-content: center; 
+    margin-bottom: 18px; 
+}
+
+.profile-action-btn { 
+    background: #6a7f64; 
+    color: #fff; 
+    border: none; 
+    border-radius: 6px; 
+    padding: 8px 24px; 
+    font-weight: 600; 
+    cursor: pointer; 
+}
+
+.profile-action-btn.friend { 
+    background: #64b5f6; 
+}
+
+.profile-action-btn.follow { 
+    background: #e57373; 
+} 

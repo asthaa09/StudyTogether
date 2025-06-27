@@ -1,0 +1,240 @@
+body { 
+    background: #f4f7fa; 
+}
+
+.dashboard-container { 
+    max-width: 100vw; 
+    overflow-x: auto; 
+}
+
+.profile-main-container {
+    flex: 1;
+    padding: 48px 0;
+}
+
+.profile-main { 
+    display: flex; 
+    gap: 64px; 
+    flex-wrap: wrap; 
+    margin-left: 32px; 
+}
+
+.profile-left { 
+    width: 320px; 
+    min-width: 220px; 
+    background: #fff; 
+    border-radius: 16px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03); 
+    padding: 32px 24px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.profile-avatar-lg { 
+    width: 96px; 
+    height: 96px; 
+    border-radius: 50%; 
+    background: #6a7f64; 
+    color: #fff; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 2.8rem; 
+    font-weight: 700; 
+    margin-bottom: 18px; 
+    overflow: hidden; 
+}
+
+.profile-avatar-lg img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.profile-name-lg { 
+    font-size: 1.3rem; 
+    font-weight: 700; 
+    margin-bottom: 2px; 
+    text-align: center; 
+}
+
+.profile-title { 
+    color: #888; 
+    font-size: 1rem; 
+    margin-bottom: 18px; 
+    text-align: center; 
+}
+
+.profile-stats { 
+    display: flex; 
+    gap: 24px; 
+    margin-bottom: 18px; 
+    flex-wrap: wrap; 
+}
+
+.profile-stat { 
+    text-align: center; 
+}
+
+.profile-stat-num { 
+    font-weight: 700; 
+    font-size: 1.1rem; 
+}
+
+.profile-upload-btn { 
+    background: #6a7f64; 
+    color: #fff; 
+    border: none; 
+    border-radius: 6px; 
+    padding: 8px 24px; 
+    font-weight: 600; 
+    cursor: pointer; 
+    display: inline-block; 
+    text-align: center; 
+}
+
+.profile-remove-btn { 
+    background: none; 
+    border: none; 
+    color: #b71c1c; 
+    cursor: pointer; 
+    font-size: 0.9rem; 
+    font-weight: 500; 
+    margin-top: 8px; 
+    padding: 4px; 
+}
+
+.profile-remove-btn:hover { 
+    text-decoration: underline; 
+}
+
+.profile-location { 
+    color: #6c757d; 
+    font-size: 0.98rem; 
+    margin-bottom: 8px; 
+    text-align: center; 
+}
+
+.profile-about { 
+    color: #888; 
+    font-size: 0.98rem; 
+    text-align: center; 
+}
+
+.profile-right { 
+    flex: 1; 
+    min-width: 260px; 
+    background: #fff; 
+    border-radius: 16px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03); 
+    padding: 32px 32px; 
+    box-sizing: border-box; 
+}
+
+.profile-form-label { 
+    font-weight: 600; 
+    font-size: 0.98rem; 
+    margin-bottom: 4px; 
+    display: block; 
+}
+
+.profile-form-group { 
+    margin-bottom: 18px; 
+}
+
+.profile-form-input, .profile-form-textarea { 
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 6px; 
+    border: 1px solid #ccc; 
+    font-size: 1rem; 
+    box-sizing: border-box; 
+}
+
+.profile-form-textarea { 
+    min-height: 70px; 
+    resize: vertical; 
+}
+
+.profile-form-actions { 
+    display: flex; 
+    gap: 12px; 
+    justify-content: flex-end; 
+    flex-wrap: wrap; 
+}
+
+.profile-form-btn { 
+    background: #6a7f64; 
+    color: #fff; 
+    border: none; 
+    border-radius: 6px; 
+    padding: 8px 24px; 
+    font-weight: 600; 
+    cursor: pointer; 
+}
+
+.profile-form-btn.cancel { 
+    background: #eee; 
+    color: #333; 
+}
+
+.profile-update-message { 
+    color: green; 
+    margin-bottom: 16px; 
+    font-weight: 500; 
+}
+
+.sidebar-footer { 
+    position: static !important; 
+    margin-top: auto; 
+    padding: 0 32px 0 32px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: stretch; 
+}
+
+.logout-link { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    color: #b71c1c; 
+    font-weight: 600; 
+    font-size: 1rem; 
+    text-decoration: none; 
+    padding: 10px 0; 
+    border-radius: 8px; 
+    transition: background 0.18s, color 0.18s; 
+    justify-content: center; 
+}
+
+.logout-link:hover { 
+    background: #f8d7da; 
+    color: #7f1d1d; 
+}
+
+@media (max-width: 1100px) {
+    .profile-main { 
+        flex-direction: column; 
+        gap: 24px; 
+        margin-left: 0; 
+    }
+    .profile-left, .profile-right { 
+        width: 100%; 
+        min-width: 0; 
+    }
+}
+
+@media (max-width: 700px) {
+    .dashboard-container { 
+        padding: 0; 
+    }
+    .profile-left, .profile-right { 
+        padding: 16px 4vw; 
+    }
+    .profile-main { 
+        gap: 12px; 
+    }
+} 

@@ -1,0 +1,138 @@
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.note-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+}
+
+.note-card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.note-icon {
+    font-size: 2.5rem;
+    color: #6a7f64;
+    margin-bottom: 16px;
+}
+
+.note-filename {
+    font-weight: 600;
+    font-size: 1rem;
+    word-break: break-word;
+    margin-bottom: 4px;
+}
+
+.note-description {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.note-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f0;
+    margin-top: auto;
+}
+
+.note-actions a, .note-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0;
+}
+
+.note-actions .like-btn.liked {
+    color: #e57373;
+}
+
+.note-actions .delete-btn {
+    color: #b71c1c; /* Danger color for delete */
+}
+
+.note-actions .delete-btn:hover {
+    color: #e57373;
+}
+
+/* Profile Modal Styles */
+#profileModalOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.18);
+    z-index: 1000;
+    border-radius: 0;
+}
+
+#profileModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 40px;
+    width: 400px;
+    height: 400px;
+    max-width: 95vw;
+    max-height: 95vh;
+    background: #fff;
+    z-index: 1001;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    border-radius: 16px;
+    transform: translateY(-50%);
+    transition: right 0.2s;
+}
+
+#profileModal button {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #888;
+    cursor: pointer;
+}
+
+#profileModalBody {
+    padding: 32px 24px;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 40px);
+}
+
+/* Description text */
+.my-notes-description {
+    font-size: 0.98rem;
+    color: #666;
+    margin-bottom: 18px;
+    max-width: 420px;
+} 
